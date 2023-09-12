@@ -1,0 +1,56 @@
+:root {
+    --corDestaque: rgb(0, 181, 187);
+    --corDestaqueSombra: rgba(0, 181, 187, 0.5);
+}
+
+.consultaConteiner {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#formConsulta {
+    width: 600px;
+    box-shadow: 0px 0px 4px 1px var(--corDestaqueSombra);
+    border: 1px solid var(--corDestaque);
+    padding: 5rem 2rem;
+    border-radius: 5px;
+}
+
+.etiqueta {
+    display: block;
+    width: max-content;
+    cursor: pointer;
+    margin-bottom: .3rem;
+}
+
+.cepArea__entradaDados {
+    padding: .65rem 1rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    outline: none;
+    margin-bottom: 2rem;
+}
+
+.cepArea__entradaDados:is(:focus, :active) {
+    border-color: var(--corDestaque);
+    box-shadow: 0px 0px 3px 1px var(--corDestaqueSombra);
+}
+
+#formConsulta__btnEnviar {
+    display: block;
+    padding: .8rem 1.7rem;
+    border: 1px solid var(--corDestaque);
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    color: var(--corDestaque);
+    font-weight: bold;
+    background-color: transparent;
+    transition: .3s all ease-in-out;
+}
+
+#formConsulta__btnEnviar:hover {
+    color: white;
+    background-color: var(--corDestaque);
+}

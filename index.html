@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicativo Consulta CEP</title>
+    <meta name="description" content="Um App, que retorna os dados de uma consulta de CEP">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="principal">
+        <section class="consultaConteiner">
+            <form id="formConsulta">
+                <fieldset class="cepArea">
+                    <label class="etiqueta" for="cep">Informe o CEP</label>
+                    <input class="cepArea__entradaDados" type="text" name="cep" id="cep" required placeholder="xxxxxxxx">
+                </fieldset>
+                <button type="submit" id="formConsulta__btnEnviar">Consultar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script/main.js"></script>
+</body>
+</html>
