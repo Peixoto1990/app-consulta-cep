@@ -7,14 +7,18 @@
     height: 100vh;
     display: grid;
     place-items: center;
+    gap: 1rem 0;
 }
 
-#formConsulta {
-    width: 600px;
+#formConsulta, .resultadoConteiner {
     box-shadow: 0px 0px 4px 1px var(--corDestaqueSombra);
     border: 1px solid var(--corDestaque);
-    padding: 5rem 2rem;
+    padding: 3rem 2rem;
     border-radius: 5px;
+}
+
+.resultadoConteiner--oculto {
+    display: none !important;
 }
 
 .etiqueta {
@@ -37,6 +41,10 @@
     box-shadow: 0px 0px 3px 1px var(--corDestaqueSombra);
 }
 
+#campoErro {
+    color: red;
+}
+
 #formConsulta__btnEnviar {
     display: block;
     padding: .8rem 1.7rem;
@@ -53,4 +61,48 @@
 #formConsulta__btnEnviar:hover {
     color: white;
     background-color: var(--corDestaque);
+}
+
+.tituloResultado {
+    margin-bottom: 1rem;
+}
+
+.itemListaResultado {
+    line-height: 1.8;
+}
+
+@media only screen and (min-width: 0) {
+    #formConsulta, .resultadoConteiner {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    #formConsulta, .resultadoConteiner {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #formConsulta, .resultadoConteiner {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    #formConsulta, .resultadoConteiner {
+        width: 600px;
+    }
+}
+
+@media print {
+    #formConsulta {
+        display: none !important;
+    }
+
+    .resultadoConteiner {
+        width: 800px;
+        box-shadow: none;
+        border: 1px solid black;
+    }
 }

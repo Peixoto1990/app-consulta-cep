@@ -15,9 +15,23 @@
                 <fieldset class="cepArea">
                     <label class="etiqueta" for="cep">Informe o CEP</label>
                     <input class="cepArea__entradaDados" type="text" name="cep" id="cep" required placeholder="xxxxxxxx">
+                    <p id="campoErro"></p>
                 </fieldset>
                 <button type="submit" id="formConsulta__btnEnviar">Consultar</button>
             </form>
+
+            <section class="resultadoConteiner resultadoConteiner--oculto">
+                <h2 class="tituloResultado"></h2>
+                <ul id="listaResultado">
+                    <li class="itemListaResultado" data-retorno="bairro"></li>
+                    <li class="itemListaResultado" data-retorno="ddd"></li>
+                    <li class="itemListaResultado" data-retorno="ibge"></li>
+                    <li class="itemListaResultado" data-retorno="localidade"></li>
+                    <li class="itemListaResultado" data-retorno="logradouro"></li>
+                    <li class="itemListaResultado" data-retorno="siafi"></li>
+                    <li class="itemListaResultado" data-retorno="uf"></li>
+                </ul>
+            </section>
         </section>
     </main>
 
